@@ -1,14 +1,23 @@
 //Задачи с freeCodeCamp
 <script> //Use Conditional Logic with If Statements
-function trueOrFalse(wasThatTrue) {
-   
-    if (wasThatTrue) {
-      return "Yes, that was true";
+    function trueOrFalse(wasThatTrue) {
+
+        if (wasThatTrue) {
+        return "Yes, that was true";
+        }
+        return "No, that was false";
     }
-    return "No, that was false";
-  }
-  
-  trueOrFalse(true);
-  trueOrFalse(false);
-  
+
+    trueOrFalse(true);
+    trueOrFalse(false);
+</script>
+
+<script>// Массив
+    function nextInLine(arr, item) {
+        let a = arr;
+        a.push(item); //добавил элемент item в конец массива
+        let b = a.shift();// с помощью шифт удалил 1-й эл-т в массиву а и присвоил его переменной b
+        return b;
+    }
+    console.log(nextInLine([5, 6, 7, 8, 9], 1));
 </script>
