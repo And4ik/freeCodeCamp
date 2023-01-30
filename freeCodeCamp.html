@@ -138,6 +138,29 @@
 
         return answer;
     }
+    //console.log(caseInSwitch(2));
+</script>
 
-    console.log(caseInSwitch(2));
+<script>
+    function switchOfStuff(val) {
+        let answer = "";
+        switch (val) {
+            case "a":// для чего значение в кавычках??
+                answer = "apple";
+                break;
+            case "b":
+                answer = "bird";
+                break;
+            case "c":
+                answer = "cat";
+                break;
+            default:
+                answer = "stuff";
+                break;
+        }
+
+        return answer;
+    }
+
+    console.log(switchOfStuff("b"));
 </script>
