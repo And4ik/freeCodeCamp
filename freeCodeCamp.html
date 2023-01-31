@@ -223,5 +223,15 @@
     function isLess(a, b) {
         return a < b;//все операторы сравнения возвращают true или false
     }
-    console.log(isLess(10, 15));
+    //console.log(isLess(10, 15));
+</script>
+
+<script>//Return Early Pattern for Functions
+    function abTest(a, b) {// если a или b < 0 возвращает underfined, иначе - следующий return
+        if (a < 0 || b < 0) {
+            return undefined;
+        }
+        return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+    }
+    abTest(2, 2);
 </script>
