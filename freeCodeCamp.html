@@ -264,7 +264,7 @@
     }
 
 
-    console.log(cc("Q"))
+    //console.log(cc("Q"))
 </script>
 
 <script>//объект, представляющий вызываемую собаку, myDog который содержит свойства name(строку) legs, tailsи friends.
@@ -274,10 +274,10 @@
         tails: 1,
         "friends": ["Shelli", "Kleopa"]
     };
-    console.log(myDog);
+    //console.log(myDog);
 </script>
 
-<script>//Accessing Object Properties with Dot Notation
+<script> //Accessing Object Properties with Dot Notation
     const testObj = {
         "hat": "ballcap",
         "shirt": "jersey",
@@ -287,12 +287,24 @@
     const shirtValue = testObj.shirt;    
 </script>
 
-<script>//Accessing Object Properties with Bracket Notation
+<script> //Accessing Object Properties with Bracket Notation
     const testObj = {
         "an entree": "hamburger",
         "my side": "veggies",
         "the drink": "water"
     };
     const entreeValue = testObj["an entree"]; // новой переменной присвоили через [] значение равное свойству обьекта "an entree"
-    const drinkValue = testObj["the drink"];   
+    const drinkValue = testObj["the drink"];
+    //console.log(entreeValue["the drink"]);  // ПОЧЕМУ НЕ ОТКРЫВАЕТСЯ??? 
+</script>
+
+<script> //Accessing Object Properties with Variables
+    const test = {
+        12: "Namath",
+        16: "Montana",
+        19: "Unitas"
+    };
+    const playerNumber = 16;  
+    const player = test[playerNumber];//доступ к свойству, которое хранится как значение переменной
+    console.log(playerNumber);
 </script>
