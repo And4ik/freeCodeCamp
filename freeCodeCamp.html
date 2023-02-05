@@ -295,7 +295,7 @@
     };
     const entreeValue = testObj["an entree"]; // новой переменной присвоили через [] значение равное свойству обьекта "an entree"
     const drinkValue = testObj["the drink"];
-    //console.log(entreeValue["the drink"]);  // ПОЧЕМУ НЕ ОТКРЫВАЕТСЯ??? 
+    //console.log(entreeValue["the drink"]);  // ПОЧЕМУ НЕ ОТКРЫВАЕТСЯ???
 </script>
 
 <script> //Accessing Object Properties with Variables
@@ -304,7 +304,18 @@
         16: "Montana",
         19: "Unitas"
     };
-    const playerNumber = 16;  
+    const playerNumber = 16;
     const player = test[playerNumber];//доступ к свойству, которое хранится как значение переменной
     console.log(playerNumber);
+</script>
+
+<script> //Updating Object Properties
+    const myDog = {
+        "name": "Coder",
+        "legs": 4,
+        "tails": 1,
+        "friends": ["freeCodeCamp Campers"]
+    };
+
+    myDog.name = "Happy Coder"; //изменяем свойство(name) переменной myDog
 </script>
