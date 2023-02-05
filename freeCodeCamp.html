@@ -268,23 +268,23 @@
 </script>
 
 <script>//объект, представляющий вызываемую собаку, myDog который содержит свойства name(строку) legs, tailsи friends.
-    const myDog = {
+    const myDog1 = {
         "name": "Demi",//строка
         legs: 4,//число
         tails: 1,
         "friends": ["Shelli", "Kleopa"]
     };
-    //console.log(myDog);
+    //console.log(myDog1);
 </script>
 
 <script> //Accessing Object Properties with Dot Notation
-    const testObj = {
+    const testObj1 = {
         "hat": "ballcap",
         "shirt": "jersey",
         "shoes": "cleats"
     };
-    const hatValue = testObj.hat; //создали переменную и присвоили ей через точку значение равное свойству обьекта Hat и Shirt     
-    const shirtValue = testObj.shirt;    
+    const hatValue = testObj1.hat; //создали переменную и присвоили ей через точку значение равное свойству обьекта Hat и Shirt     
+    const shirtValue = testObj1.shirt;    
 </script>
 
 <script> //Accessing Object Properties with Bracket Notation
@@ -295,7 +295,7 @@
     };
     const entreeValue = testObj["an entree"]; // новой переменной присвоили через [] значение равное свойству обьекта "an entree"
     const drinkValue = testObj["the drink"];
-    //console.log(entreeValue["the drink"]);  // ПОЧЕМУ НЕ ОТКРЫВАЕТСЯ???
+    //console.log(entreeValue); 
 </script>
 
 <script> //Accessing Object Properties with Variables
@@ -306,7 +306,7 @@
     };
     const playerNumber = 16;
     const player = test[playerNumber];//доступ к свойству, которое хранится как значение переменной
-    console.log(playerNumber);
+    //console.log(playerNumber);
 </script>
 
 <script> //Updating Object Properties
@@ -321,25 +321,25 @@
 </script>
 
 <script>//Add New Properties to a JavaScript Object
-    const myDog = {
+    const myDog2 = {
         "name": "Happy Coder",
         "legs": 4,
         "tails": 1,
         "friends": ["freeCodeCamp Campers"]
     };
-    myDog.bark = "Gav-gav"  //добавили новое свойство bark к существующему обьекту myDog
+    myDog2.bark = "Gav-gav"  //добавили новое свойство bark к существующему обьекту myDog
 
 </script>
 
 <script>//Delete Properties from a JavaScript Object
-    const myDog = {
+    const myDog4 = {
         "name": "Happy Coder",
         "legs": 4,
         "tails": 1,
         "friends": ["freeCodeCamp Campers"],
         "bark": "woof"
     };
-    delete myDog.tails;//удалили свойство tails у обьекта myDog
+    delete myDog4.tails;//удалили свойство tails у обьекта myDog
 </script>
 
 <script>
@@ -355,7 +355,32 @@
             "foxtrot": "Frank",
         }
         return lookup[val];
-        return result;
+
     }
-    //console.log(phoneticLookup("echo"));
+    //console.log(phoneticLookup("bravo"));
+</script>
+
+<script>
+    const myObj = {
+        top: "hat",
+        bottom: "pants"
+    };
+
+    console.log(myObj.hasOwnProperty("bottom"));
+    myObj.hasOwnProperty("middle");
+</script>
+
+<script>//Testing Objects for Properties
+    const andrei = {
+        gift: "pony",
+        pet: "kitten",
+        bed: "sleigh"
+    }
+    function checkObj(obj, checkProp) {
+        if (obj.hasOwnProperty(checkProp)) {
+            return obj[checkProp];
+        }
+        return "Not Found";
+    }
+    //console.log(checkObj(andrei, "de"))
 </script>
