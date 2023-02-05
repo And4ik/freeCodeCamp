@@ -295,7 +295,7 @@
     };
     const entreeValue = testObj["an entree"]; // новой переменной присвоили через [] значение равное свойству обьекта "an entree"
     const drinkValue = testObj["the drink"];
-    //console.log(entreeValue); 
+    //console.log(entreeValue);
 </script>
 
 <script> //Accessing Object Properties with Variables
@@ -383,4 +383,30 @@
         return "Not Found";
     }
     //console.log(checkObj(andrei, "de"))
+</script>
+
+<script> //Manipulating Complex Objects, массив содержит один обьект внутри, в который вложен еще 1 массив
+    const myMusic = [
+        {
+            "artist": "Billy Joel",
+            "title": "Piano Man",
+            "release_year": 1973,
+            "formats": [
+                "CD",
+                "8T",
+                "LP"
+            ],
+            "gold": true
+        }, {// добавление еще одного альбома в альбом
+            "artist": "kish",
+            "title": "Guitar",
+            "release_year": 1982,
+            "formats": [
+                "CD",
+                "8T",
+                "LP"
+            ],
+            "gold": false
+        }
+    ];
 </script>
